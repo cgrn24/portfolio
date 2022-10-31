@@ -1,0 +1,25 @@
+.footerBlock {
+  height: 20vh;
+  background-color: aquamarine;
+}
+
+.footerContainer {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.smthgWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  border: 1px solid;
+}
+.smthg {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(240, 140, 140);
+}
+
+.text {
+  background-color: rgb(175, 175, 175);
+}
