@@ -13,17 +13,18 @@
   text-align: justify;
 }
 
-.icon {
-  position: relative;
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 250px;
-  width: 400px;
+  width: 100%;
   background-color: rgb(187, 105, 105);
+  background-size: cover;
+  background-position: center;
 }
 
 .button {
-  position: absolute;
-  top: 40%;
-  left: 35%;
   background-color: #555;
   color: rgb(0, 0, 0);
   font-size: 16px;

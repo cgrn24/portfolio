@@ -11,12 +11,12 @@
 .smthgWrapper {
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 280px;
   border: 1px solid;
 }
 .smthg {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background-color: rgb(240, 140, 140);
 }
 
