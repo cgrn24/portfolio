@@ -5,7 +5,10 @@ export const Projects = () => {
   return (
     <div className={style.projectsBlock}>
       <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-        <h2 className={style.title}>My projects</h2>
+        <div className={style.title}>
+          <h2>My projects</h2>
+        </div>
+
         <div className={style.projects}>
           <Project title='123' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
           <Project title='123' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
