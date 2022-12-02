@@ -33,3 +33,13 @@
   cursor: pointer;
   border-radius: 5px;
 }
+.projectTitle {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+  line-height: 1.2;
+  color: #fff;
+}
+.description {
+}
