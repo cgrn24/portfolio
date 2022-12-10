@@ -1,4 +1,4 @@
-import style from './Footer.module.css'
+import style from './Footer.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <div className={style.footerBlock}>
       <div className={`${styleContainer.container} ${style.footerContainer}`}>
-        <h3 className={style.text}>Иван Иванов</h3>
+        <h3 className={style.text}>Petr Prudnikov</h3>
         <div className={style.iconWrapper}>
           <FontAwesomeIcon icon={faEnvelope} size='2x' className={style.icon} />
           <FontAwesomeIcon icon={faGithub} size='2x' className={style.icon} />
@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className={style.icon}></div>
           <div className={style.icon}></div> */}
         </div>
-        <div>©2022 Все права защищены</div>
+        <div className={style.copyrights}>©2022 All rights reserved</div>
       </div>
     </div>
   )

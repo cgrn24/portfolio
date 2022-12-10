@@ -1,0 +1,30 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+.footerBlock {
+  height: 20vh;
+  background-color: $bgColor;
+  .footerContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    .iconWrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 280px;
+      .icon {
+        color: $textColor;
+        height: 40px;
+        width: 40px;
+      }
+    }
+    .text {
+      @include text($titleFontFamily, 22px, 1.2);
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    .copyrights {
+      @include text($textFontFamily, 14px, 1.8);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

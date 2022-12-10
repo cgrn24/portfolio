@@ -6,7 +6,7 @@ export const Contacts = () => {
   return (
     <div className={style.contactsBlock}>
       <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-        <Title title={'Contacts'} />
+        <Title title={'Contact'} />
         <form className={style.inputBlock}>
           <input type='text' className={style.inputName}></input>
           <input type='text' className={style.inputMail}></input>
