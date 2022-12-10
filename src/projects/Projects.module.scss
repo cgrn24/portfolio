@@ -1,20 +1,26 @@
+@import '../common/styles/sass/variables.scss';
 .projectsBlock {
   min-height: 100vh;
-  background-color: #343a40;
+  background-color: $bgColor;
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    .projects {
+      /* border: 1px solid; */
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      align-items: flex-start;
+      @media screen and (max-width: 1129px) {
+        justify-content: center;
+      }
+    }
+  }
 }
-.projectsContainer {
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.projects {
-  border: 1px solid;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-.title {
+
+/* .title {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0 0 30px;
   font-weight: 300;
@@ -39,10 +45,4 @@
   bottom: -30px;
   left: 50%;
   transform: translate(-50%, 50%);
-}
-
-@media screen and (max-width: 1129px) {
-  .projects {
-    justify-content: center;
-  }
-}
+} */

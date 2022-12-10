@@ -1,16 +1,30 @@
-import style from './Projects.module.css'
+import style from './Projects.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import { Project } from './project/Project'
 import { Title } from '../common/components/title/Title'
+import todoImage from './../assets/image/todolist.jpg'
+import socialImage from './../assets/image/socnet.jpg'
+
+export type ProjectStyleType = {
+  backgroundImage: string
+}
+
 export const Projects = () => {
+  const socnetStyle = {
+    backgroundImage: `url(${todoImage})`,
+  }
+  const todoStyle = {
+    backgroundImage: `url(${socialImage})`,
+  }
+
   return (
     <div className={style.projectsBlock}>
       <div className={`${styleContainer.container} ${style.projectsContainer}`}>
         <Title title={'Projects'} />
 
         <div className={style.projects}>
-          <Project title='123' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
-          <Project title='123' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
+          <Project style={socnetStyle} title='Social network' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
+          <Project style={todoStyle} title='Todo list' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
         </div>
       </div>
     </div>

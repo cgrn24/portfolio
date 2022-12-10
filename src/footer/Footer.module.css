@@ -8,13 +8,13 @@
   justify-content: space-between;
 }
 
-.smthgWrapper {
+.iconWrapper {
   display: flex;
   justify-content: space-between;
   width: 280px;
   border: 1px solid;
 }
-.smthg {
+.icon {
   height: 40px;
   width: 40px;
   background-color: rgb(240, 140, 140);

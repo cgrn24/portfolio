@@ -1,0 +1,30 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+.mainBlock {
+  height: 100vh;
+  background-color: $bgColor;
+  .text {
+    width: 500px;
+    // background-color: rgb(248, 233, 248);
+    .titleText {
+      @include text($textFontFamily, 14px, 1.8);
+      font-weight: 400;
+      text-align: left;
+    }
+    .mainText {
+      @include text($titleFontFamily, 40px, 1.2);
+      font-weight: 800;
+      text-align: left;
+    }
+    .secondText {
+      @include text($textFontFamily, 27px, 1.8);
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(248, 233, 248);
+  }
+}

@@ -1,14 +1,15 @@
+import { Title } from '../common/components/title/Title'
 import styleContainer from '../common/styles/Container.module.css'
-import style from './Contacts.module.css'
+import style from './Contacts.module.scss'
 
 export const Contacts = () => {
   return (
     <div className={style.contactsBlock}>
       <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-        <h2 className={style.title}>Контакты</h2>
+        <Title title={'Contacts'} />
         <form className={style.inputBlock}>
-          <input type='text'></input>
-          <input type='text'></input>
+          <input type='text' className={style.inputName}></input>
+          <input type='text' className={style.inputMail}></input>
           <textarea className={style.textarea}></textarea>
         </form>
         <div className={style.buttonWrapper}>

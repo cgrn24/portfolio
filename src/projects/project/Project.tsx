@@ -1,18 +1,22 @@
-import style from './Project.module.css'
+import { ProjectStyleType } from '../Projects'
+import style from './Project.module.scss'
 
 type ProjectPropsType = {
   title: string
   description: string
+  style: ProjectStyleType
 }
 
 export const Project = (props: ProjectPropsType) => {
   return (
     <div className={style.project}>
-      <div className={style.image}>
+      <div className={style.image} style={props.style}>
         <button className={style.button}>Смотреть</button>
       </div>
-      <h3 className={style.projectTitle}>{props.title}</h3>
-      <span className={style.description}>{props.description}</span>
+      <div className={style.projectInfo}>
+        <h3 className={style.projectTitle}>{props.title}</h3>
+        <span className={style.description}>{props.description}</span>
+      </div>
     </div>
   )
 }
