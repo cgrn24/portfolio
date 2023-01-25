@@ -3,18 +3,36 @@
 .mainBlock {
   height: 100vh;
   background-color: $bgColor;
+  @include flex(row, space-between, center, wrap);
   .text {
+    @include flex(column, flex-start, flex-start, nowrap);
     width: 500px;
-    // background-color: rgb(248, 233, 248);
-    .titleText {
-      @include text($textFontFamily, 14px, 1.8);
-      font-weight: 400;
-      text-align: left;
-    }
-    .mainText {
-      @include text($titleFontFamily, 40px, 1.2);
-      font-weight: 800;
-      text-align: left;
+    span {
+      color: $textColor;
+      font-size: 16px;
+      &:nth-child(2) {
+        @include text($textFontFamily, 40px, 1.2);
+        font-weight: 800;
+        letter-spacing: 5px;
+        margin: 10px 0;
+        span {
+          @include text($textFontFamily, 40px, 1.2);
+          font-weight: 800;
+          letter-spacing: 5px;
+          position: relative;
+          z-index: 0;
+          display: inline-block;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            background-color: $primaryColor;
+            bottom: 0;
+            z-index: -1;
+          }
+        }
+      }
     }
     .secondText {
       @include text($textFontFamily, 27px, 1.8);
@@ -23,8 +41,33 @@
     }
   }
   .photo {
-    width: 300px;
-    height: 400px;
-    background-color: rgb(248, 233, 248);
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 1143px) {
+      margin-top: 50px;
+    }
+    .image {
+      width: 300px;
+      height: 400px;
+      @include bgSettings();
+      // background-image: url('./../assets/image/photo.jpg');
+      background-position: 80% 0;
+      background-color: rgb(248, 233, 248);
+      @media screen and (max-width: 600px) {
+        height: 360px;
+        width: 260px;
+        transition: 0.5s;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        height: 110%;
+        width: 105%;
+        border: 5px solid $primaryColor;
+        left: 15px;
+        top: -15px;
+        z-index: -1;
+      }
+    }
   }
 }

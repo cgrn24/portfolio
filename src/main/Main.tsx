@@ -5,11 +5,15 @@ export const Main = () => {
     <div className={style.mainBlock}>
       <div className={styleContainer.container}>
         <div className={style.text}>
-          <p className={style.titleText}>Hi There</p>
-          <h1 className={style.mainText}>I am Jeffrey Aaron</h1>
+          <span>Hi There</span>
+          <span>
+            I am Petr <span>Prudnikov</span>
+          </span>
           <p className={style.secondText}>Frontend Developer</p>
         </div>
-        <div className={style.photo}></div>
+        <div className={style.photo}>
+          <div className={style.image}></div>
+        </div>
       </div>
     </div>
   )
