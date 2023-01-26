@@ -3,7 +3,16 @@
 .mainBlock {
   height: 100vh;
   background-color: $bgColor;
+  position: relative;
   @include flex(row, space-between, center, wrap);
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
   .text {
     @include flex(column, flex-start, flex-start, nowrap);
     width: 500px;
