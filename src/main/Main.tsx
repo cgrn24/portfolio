@@ -5,6 +5,7 @@ import { loadFull } from 'tsparticles'
 import { useCallback } from 'react'
 import { Container, Engine } from 'tsparticles-engine'
 import { Fade } from 'react-awesome-reveal'
+import ReactTypingEffect from 'react-typing-effect'
 
 export const Main = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -100,7 +101,8 @@ export const Main = () => {
             <span>
               I am Petr <span>Prudnikov</span>
             </span>
-            <p className={style.secondText}>Frontend Developer</p>
+            <ReactTypingEffect text={'Frontend Developer'} />
+            {/* <p className={style.secondText}>Frontend Developer</p> */}
           </div>
           <div className={style.photo}>
             <div className={style.image}></div>
