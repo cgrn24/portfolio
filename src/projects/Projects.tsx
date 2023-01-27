@@ -4,6 +4,7 @@ import { Project } from './project/Project'
 import { Title } from '../common/components/title/Title'
 import todoImage from './../assets/image/todolist.jpg'
 import socialImage from './../assets/image/socnet.jpg'
+import { Fade } from 'react-awesome-reveal'
 
 export type ProjectStyleType = {
   backgroundImage: string
@@ -19,14 +20,16 @@ export const Projects = () => {
 
   return (
     <div className={style.projectsBlock}>
-      <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-        <Title title={'Projects'} />
+      <Fade direction='up' triggerOnce>
+        <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+          <Title title={'Projects'} />
 
-        <div className={style.projects}>
-          <Project style={socnetStyle} title='Social network' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
-          <Project style={todoStyle} title='Todo list' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
+          <div className={style.projects}>
+            <Project style={socnetStyle} title='Social network' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
+            <Project style={todoStyle} title='Todo list' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   )
 }

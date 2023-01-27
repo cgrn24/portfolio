@@ -8,44 +8,47 @@ import tsIcon from '../assets/image/ts.svg'
 import htmlIcon from '../assets/image/html.svg'
 import cssIcon from '../assets/image/css.svg'
 import muiIcon from '../assets/image/mui.svg'
+import { Fade } from 'react-awesome-reveal'
 export const Skills = () => {
   return (
     <div className={style.skillsBlock}>
-      <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-        <Title title={'My skills'} />
-        <div className={style.skills}>
-          <Skill
-            icon={reactIcon}
-            title='React'
-            description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-          />
-          <Skill
-            icon={tsIcon}
-            title='TypeScript'
-            description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-          />
-          <Skill
-            icon={reduxIcon}
-            title='Redux'
-            description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-          />
-          <Skill
-            icon={htmlIcon}
-            title='HTML5'
-            description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-          />
-          <Skill
-            icon={cssIcon}
-            title='CSS3'
-            description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-          />
-          <Skill
-            icon={muiIcon}
-            title='Material UI'
-            description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-          />
+      <Fade direction='up' triggerOnce>
+        <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+          <Title title={'My skills'} />
+          <div className={style.skills}>
+            <Skill
+              icon={reactIcon}
+              title='React'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={tsIcon}
+              title='TypeScript'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={reduxIcon}
+              title='Redux'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={htmlIcon}
+              title='HTML5'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={cssIcon}
+              title='CSS3'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={muiIcon}
+              title='Material UI'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import { useCallback } from 'react'
 import { Container, Engine } from 'tsparticles-engine'
+import { Fade } from 'react-awesome-reveal'
 
 export const Main = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -91,17 +92,20 @@ export const Main = () => {
         init={particlesInit}
         loaded={particlesLoaded}
       />
+
       <div className={styleContainer.container}>
-        <div className={style.text}>
-          <span>Hi There</span>
-          <span>
-            I am Petr <span>Prudnikov</span>
-          </span>
-          <p className={style.secondText}>Frontend Developer</p>
-        </div>
-        <div className={style.photo}>
-          <div className={style.image}></div>
-        </div>
+        <Fade direction='up' triggerOnce>
+          <div className={style.text}>
+            <span>Hi There</span>
+            <span>
+              I am Petr <span>Prudnikov</span>
+            </span>
+            <p className={style.secondText}>Frontend Developer</p>
+          </div>
+          <div className={style.photo}>
+            <div className={style.image}></div>
+          </div>
+        </Fade>
       </div>
     </div>
   )
