@@ -6,6 +6,7 @@ import { useCallback } from 'react'
 import { Container, Engine } from 'tsparticles-engine'
 import { Fade } from 'react-awesome-reveal'
 import ReactTypingEffect from 'react-typing-effect'
+import Tilt from 'react-parallax-tilt'
 
 export const Main = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -105,7 +106,9 @@ export const Main = () => {
             {/* <p className={style.secondText}>Frontend Developer</p> */}
           </div>
           <div className={style.photo}>
-            <div className={style.image}></div>
+            <Tilt>
+              <div className={style.image}></div>
+            </Tilt>
           </div>
         </Fade>
       </div>
