@@ -5,7 +5,7 @@ import style from './Contacts.module.scss'
 
 export const Contacts = () => {
   return (
-    <div className={style.contactsBlock}>
+    <div id='contacts' className={style.contactsBlock}>
       <Fade direction='up' triggerOnce>
         <div className={`${styleContainer.container} ${style.skillsContainer}`}>
           <Title title={'Contact'} />

@@ -9,7 +9,7 @@ import { Fade } from 'react-awesome-reveal'
 
 export const Footer = () => {
   return (
-    <div className={style.footerBlock}>
+    <div id='footer' className={style.footerBlock}>
       <div className={`${styleContainer.container} ${style.footerContainer}`}>
         <Fade direction='up' triggerOnce>
           <h3 className={style.text}>Petr Prudnikov</h3>

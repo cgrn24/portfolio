@@ -11,7 +11,7 @@ import muiIcon from '../assets/image/mui.svg'
 import { Fade } from 'react-awesome-reveal'
 export const Skills = () => {
   return (
-    <div className={style.skillsBlock}>
+    <div id='skills' className={style.skillsBlock}>
       <Fade direction='up' triggerOnce>
         <div className={`${styleContainer.container} ${style.skillsContainer}`}>
           <Title title={'My skills'} />

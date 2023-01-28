@@ -19,7 +19,7 @@ export const Projects = () => {
   }
 
   return (
-    <div className={style.projectsBlock}>
+    <div id='projects' className={style.projectsBlock}>
       <Fade direction='up' triggerOnce>
         <div className={`${styleContainer.container} ${style.projectsContainer}`}>
           <Title title={'Projects'} />
