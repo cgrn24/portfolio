@@ -4,7 +4,7 @@
 .nav {
   width: 300px;
   @include flex(row, space-between, stretch, nowrap);
-  a {
+  .link {
     @include text($titleFontFamily, 16px, 12);
     font-weight: 400;
     cursor: pointer;
