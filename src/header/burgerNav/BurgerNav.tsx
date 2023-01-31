@@ -1,1 +1,22 @@
-export const BurgerNav = () => {}
+import { Link } from 'react-scroll'
+import style from './BurgerNav.module.scss'
+export const BurgerNav = () => {
+  return (
+    <div className={style.burgerNav}>
+      <div className={style.burgerNavItems}>
+        <Link className={style.link} activeClass={style.active} to='' spy={true} smooth={true} offset={0} duration={500}>
+          Main
+        </Link>
+        <Link className={style.link} activeClass={style.active} to='skills' spy={true} smooth={true} offset={1} duration={500}>
+          Skills
+        </Link>
+        <Link className={style.link} activeClass={style.active} to='projects' spy={true} smooth={true} offset={1} duration={500}>
+          Projects
+        </Link>
+        <Link className={style.link} activeClass={style.active} to='contacts' spy={true} smooth={true} offset={1} duration={500}>
+          Contacts
+        </Link>
+      </div>
+    </div>
+  )
+}

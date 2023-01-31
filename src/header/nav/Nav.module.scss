@@ -1,11 +1,9 @@
-@import '../common/styles/sass/mixins.scss';
-@import '../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
+@import '../../common/styles/sass/variables.scss';
 
 .nav {
-  border: 1px solid;
   width: 300px;
-  display: flex;
-  justify-content: space-between;
+  @include flex(row, space-between, stretch, nowrap);
   a {
     @include text($titleFontFamily, 16px, 12);
     font-weight: 400;
@@ -17,5 +15,8 @@
   }
   .active {
     color: $primaryColor;
+  }
+  @media screen and (max-width: 400px) {
+    display: none;
   }
 }

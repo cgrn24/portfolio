@@ -1,0 +1,24 @@
+@import '../../common/styles/sass/mixins.scss';
+@import '../../common/styles/sass/variables.scss';
+
+.burgerNav {
+  width: 300px;
+  .burgerNavItems {
+    @include flex(column, space-between, center, nowrap);
+    .link {
+      @include text($titleFontFamily, 16px, 1.2);
+      font-weight: 400;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+        color: $primaryColor;
+      }
+    }
+  }
+  .active {
+    color: $primaryColor;
+  }
+  @media screen and (min-width: 400px) {
+    display: none;
+  }
+}
