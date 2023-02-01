@@ -3,10 +3,12 @@
 
 .nav {
   width: 300px;
+  padding-right: 50px;
   @include flex(row, space-between, stretch, nowrap);
   .link {
     @include text($titleFontFamily, 16px, 12);
     font-weight: 400;
+    color: $textColor;
     cursor: pointer;
     &:hover {
       text-decoration: none;
@@ -16,7 +18,7 @@
   .active {
     color: $primaryColor;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     display: none;
   }
 }
