@@ -1,7 +1,10 @@
 @import '../common/styles/sass/variables.scss';
 
 .header {
+  z-index: 1;
   height: 80px;
+  width: 100%;
+  position: fixed;
   background-color: $bgSecondColor;
   display: flex;
   // justify-content: flex-end;
