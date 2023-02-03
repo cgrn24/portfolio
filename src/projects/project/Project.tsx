@@ -6,14 +6,14 @@ type ProjectPropsType = {
   title: string
   description: string
   style: ProjectStyleType
+  link: string
 }
 
 export const Project = (props: ProjectPropsType) => {
   return (
     <div className={style.project}>
       <div className={style.image} style={props.style}>
-        <Button text='View' link='/*' />
-        {/* <button className={style.button}>Смотреть</button> */}
+        <Button text='View' link={props.link} newtab={true} />
       </div>
       <div className={style.projectInfo}>
         <h3 className={style.projectTitle}>{props.title}</h3>

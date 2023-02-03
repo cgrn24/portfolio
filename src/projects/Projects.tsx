@@ -4,6 +4,7 @@ import { Project } from './project/Project'
 import { Title } from '../common/components/title/Title'
 import todoImage from './../assets/image/todolist.jpg'
 import socialImage from './../assets/image/socnet.jpg'
+import cardsImage from './../assets/image/cards.png'
 import { Fade } from 'react-awesome-reveal'
 
 export type ProjectStyleType = {
@@ -18,6 +19,10 @@ export const Projects = () => {
     backgroundImage: `url(${socialImage})`,
   }
 
+  const cardsStyle = {
+    backgroundImage: `url(${cardsImage})`,
+  }
+
   return (
     <div id='projects' className={style.projectsBlock}>
       <Fade direction='up' triggerOnce>
@@ -25,8 +30,19 @@ export const Projects = () => {
           <Title title={'Projects'} />
 
           <div className={style.projects}>
-            <Project style={socnetStyle} title='Social network' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
-            <Project style={todoStyle} title='Todo list' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' />
+            <Project
+              style={cardsStyle}
+              title='The Cards app'
+              description='Cards is an app that uses spaced repetition technique for you to quickly memorize things.'
+              link='https://cards-lovat-eight.vercel.app/'
+            />
+            <Project
+              style={socnetStyle}
+              title='Social network'
+              description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.'
+              link='/'
+            />
+            <Project style={todoStyle} title='Todo list' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' link='/' />
           </div>
         </div>
       </Fade>
