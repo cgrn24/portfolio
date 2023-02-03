@@ -23,7 +23,7 @@ export const Main = () => {
   }, [])
 
   return (
-    <div className={style.mainBlock}>
+    <div id='main' className={style.mainBlock}>
       <Particles
         className={style.particles}
         options={{
@@ -103,7 +103,6 @@ export const Main = () => {
               I am Petr <span>Prudnikov</span>
             </span>
             <ReactTypingEffect text={'Frontend Developer'} />
-            {/* <p className={style.secondText}>Frontend Developer</p> */}
           </div>
           <div className={style.photo}>
             <Tilt>

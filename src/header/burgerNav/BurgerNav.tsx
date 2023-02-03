@@ -9,7 +9,7 @@ export const BurgerNav = () => {
   return (
     <div className={style.burgerNav}>
       <div className={open ? `${style.show} ${style.burgerNavItems}` : style.burgerNavItems}>
-        <Link className={style.link} activeClass={style.active} to='' spy={true} smooth={true} offset={0} duration={500}>
+        <Link className={style.link} activeClass={style.active} to='main' spy={true} smooth={true} offset={0} duration={500}>
           Main
         </Link>
         <Link className={style.link} activeClass={style.active} to='skills' spy={true} smooth={true} offset={1} duration={500}>

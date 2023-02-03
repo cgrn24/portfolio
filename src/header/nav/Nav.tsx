@@ -3,7 +3,7 @@ import style from './Nav.module.scss'
 export const Nav = () => {
   return (
     <div className={style.nav}>
-      <Link className={style.link} activeClass={style.active} to='' spy={true} smooth={true} offset={0} duration={500}>
+      <Link className={style.link} activeClass={style.active} to='main' spy={true} smooth={true} offset={0} duration={500}>
         Main
       </Link>
       <Link className={style.link} activeClass={style.active} to='skills' spy={true} smooth={true} offset={1} duration={500}>
