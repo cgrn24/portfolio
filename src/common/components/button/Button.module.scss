@@ -4,7 +4,8 @@
 .button {
   border: none;
   @include flex(row, center, center, nowrap);
-  @include text($textFontFamily, 14px, 1.2, 400);
+  @include text($textFontFamily, 14px, 1.2);
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 8px 20px;
@@ -12,6 +13,7 @@
   width: 100%;
   color: $textColor;
   outline: none;
+  text-decoration: none;
   position: relative;
   z-index: 0;
   &::after {

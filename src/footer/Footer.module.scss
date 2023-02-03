@@ -14,6 +14,11 @@
         color: $textColor;
         height: 40px;
         width: 40px;
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+          box-shadow: 0 0 15px rgba(117, 135, 156, 0.555);
+          background-color: rgba(117, 135, 156, 0.2);
+        }
       }
     }
     .text {

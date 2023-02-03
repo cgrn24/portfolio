@@ -1,8 +1,13 @@
 import style from './Button.module.scss'
 
-export const Button = (props: any) => {
+type ButtonPropsType = {
+  text: string
+  link: string
+}
+
+export const Button = (props: ButtonPropsType) => {
   return (
-    <a href='' className={style.button}>
+    <a href={props.link} className={style.button}>
       {props.text}
     </a>
   )

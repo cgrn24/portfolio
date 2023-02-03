@@ -1,3 +1,4 @@
+import { Button } from '../../common/components/button/Button'
 import { ProjectStyleType } from '../Projects'
 import style from './Project.module.scss'
 
@@ -11,7 +12,8 @@ export const Project = (props: ProjectPropsType) => {
   return (
     <div className={style.project}>
       <div className={style.image} style={props.style}>
-        <button className={style.button}>Смотреть</button>
+        <Button text='View' link='/*' />
+        {/* <button className={style.button}>Смотреть</button> */}
       </div>
       <div className={style.projectInfo}>
         <h3 className={style.projectTitle}>{props.title}</h3>

@@ -1,4 +1,5 @@
 import { Fade } from 'react-awesome-reveal'
+import { Button } from '../common/components/button/Button'
 import { Title } from '../common/components/title/Title'
 import styleContainer from '../common/styles/Container.module.css'
 import style from './Contacts.module.scss'
@@ -15,7 +16,8 @@ export const Contacts = () => {
             <textarea className={style.textarea} placeholder={'Your message'}></textarea>
           </form>
           <div className={style.buttonWrapper}>
-            <button className={style.button}>Отправить</button>
+            <Button text='Send message' link='/*' />
+            {/* <button className={style.button}>Отправить</button> */}
           </div>
         </div>
       </Fade>

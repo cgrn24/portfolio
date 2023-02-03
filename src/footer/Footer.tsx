@@ -18,10 +18,6 @@ export const Footer = () => {
             <FontAwesomeIcon icon={faGithub} size='2x' className={style.icon} />
             <FontAwesomeIcon icon={faLinkedin} size='2x' className={style.icon} />
             <FontAwesomeIcon icon={faTelegram} size='2x' className={style.icon} />
-            {/* <div className={style.icon}></div>
-          <div className={style.icon}></div>
-          <div className={style.icon}></div>
-          <div className={style.icon}></div> */}
           </div>
           <div className={style.copyrights}>©2022 All rights reserved</div>
         </Fade>
