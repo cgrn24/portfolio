@@ -16,7 +16,7 @@
   flex-direction: $direction;
   justify-content: $justifyContent;
   align-items: $alignItems;
-  flex-wrap: wrap;
+  flex-wrap: $wrap;
 }
 
 @mixin bgSettings() {

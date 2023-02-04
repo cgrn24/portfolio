@@ -1,5 +1,4 @@
 import style from './Main.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import { useCallback } from 'react'
@@ -94,8 +93,7 @@ export const Main = () => {
         init={particlesInit}
         loaded={particlesLoaded}
       />
-
-      <div className={styleContainer.container}>
+      <div className={style.container}>
         <Fade direction='up' triggerOnce>
           <div className={style.text}>
             <span>Hi There</span>
