@@ -9,16 +9,16 @@ export const BurgerNav = () => {
   return (
     <div className={style.burgerNav}>
       <div className={open ? `${style.show} ${style.burgerNavItems}` : style.burgerNavItems}>
-        <Link className={style.link} activeClass={style.active} to='main' spy={true} smooth={true} offset={0} duration={500}>
+        <Link className={style.link} activeClass={style.active} to='main' spy={true} smooth={true} offset={0} duration={500} onClick={clickHandler}>
           Main
         </Link>
-        <Link className={style.link} activeClass={style.active} to='skills' spy={true} smooth={true} offset={-80} duration={500}>
+        <Link className={style.link} activeClass={style.active} to='skills' spy={true} smooth={true} offset={-80} duration={500} onClick={clickHandler}>
           Skills
         </Link>
-        <Link className={style.link} activeClass={style.active} to='projects' spy={true} smooth={true} offset={-80} duration={500}>
+        <Link className={style.link} activeClass={style.active} to='projects' spy={true} smooth={true} offset={-80} duration={500} onClick={clickHandler}>
           Projects
         </Link>
-        <Link className={style.link} activeClass={style.active} to='contacts' spy={true} smooth={true} offset={1} duration={500}>
+        <Link className={style.link} activeClass={style.active} to='contacts' spy={true} smooth={true} offset={1} duration={500} onClick={clickHandler}>
           Contacts
         </Link>
       </div>
