@@ -7,8 +7,8 @@ export const BurgerNav = () => {
   const [open, setOpen] = useState(false)
   const clickHandler = () => setOpen(!open)
   return (
-    <div className={style.burgerNav}>
-      <div className={open ? `${style.show} ${style.burgerNavItems}` : style.burgerNavItems}>
+    <div className={style.burgerNav} onClick={clickHandler}>
+      <div className={open ? `${style.show} ${style.burgerNavItems}` : style.burgerNavItems} onClick={(e) => e.stopPropagation()}>
         <Link className={style.link} activeClass={style.active} to='main' spy={true} smooth={true} offset={0} duration={500} onClick={clickHandler}>
           Main
         </Link>
@@ -22,9 +22,8 @@ export const BurgerNav = () => {
           Contacts
         </Link>
       </div>
-      {/* <div onClick={clickHandler} className={style.burgerBtn}> */}
       <FontAwesomeIcon className={style.burgerBtn} onClick={clickHandler} icon={faBars} size='1x' color='#4e93e6' />
-      {/* </div> */}
+      {open && <div className={style.blur} />}
     </div>
   )
 }
