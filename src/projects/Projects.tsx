@@ -13,10 +13,10 @@ export type ProjectStyleType = {
 
 export const Projects = () => {
   const socnetStyle = {
-    backgroundImage: `url(${todoImage})`,
+    backgroundImage: `url(${socialImage})`,
   }
   const todoStyle = {
-    backgroundImage: `url(${socialImage})`,
+    backgroundImage: `url(${todoImage})`,
   }
 
   const cardsStyle = {
