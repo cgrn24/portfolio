@@ -2,7 +2,7 @@ import style from './Button.module.scss'
 
 type ButtonPropsType = {
   text: string
-  link: string
+  link?: string
   newtab?: boolean
 }
 

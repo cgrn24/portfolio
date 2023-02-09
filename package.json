@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://cgrn24.github.io/portfolio/",
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
@@ -19,6 +20,7 @@
     "@types/react-dom": "^18.0.0",
     "@types/react-scroll": "^1.8.6",
     "@types/react-typing-effect": "^2.0.3",
+    "emailjs": "^4.0.1",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
