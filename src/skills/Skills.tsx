@@ -8,6 +8,9 @@ import tsIcon from '../assets/image/ts.svg'
 import htmlIcon from '../assets/image/html.svg'
 import cssIcon from '../assets/image/css.svg'
 import muiIcon from '../assets/image/mui.svg'
+import rhfIcon from '../assets/image/rhf.svg'
+import axiosIcon from '../assets/image/axios.svg'
+import sassIcon from '../assets/image/sass.svg'
 import { Fade } from 'react-awesome-reveal'
 export const Skills = () => {
   return (
@@ -28,7 +31,7 @@ export const Skills = () => {
             />
             <Skill
               icon={reduxIcon}
-              title='Redux'
+              title='Redux / Redux Toolkit'
               description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
             />
             <Skill
@@ -44,6 +47,21 @@ export const Skills = () => {
             <Skill
               icon={muiIcon}
               title='Material UI'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={rhfIcon}
+              title='React Hook Form'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={axiosIcon}
+              title='AXIOS'
+              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
+            />
+            <Skill
+              icon={sassIcon}
+              title='SCSS/SASS'
               description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
             />
           </div>

@@ -13,7 +13,7 @@ export const Skill = (props: SkillPropsType) => {
         <img className={style.svg} src={props.icon} />
       </div>
       <h3 className={style.title}>{props.title}</h3>
-      <span className={style.description}>{props.description}</span>
+      {/* <span className={style.description}>{props.description}</span> */}
     </div>
   )
 }
