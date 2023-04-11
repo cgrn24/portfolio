@@ -52,10 +52,10 @@ export const Main = () => {
           },
           particles: {
             color: {
-              value: '#ffffff',
+              value: '#000000',
             },
             links: {
-              color: '#ffffff',
+              color: '#000000',
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -102,11 +102,11 @@ export const Main = () => {
             </span>
             <ReactTypingEffect text={'Frontend Developer'} />
           </div>
-          <div className={style.photo}>
+          {/* <div className={style.photo}>
             <Tilt>
               <div className={style.image}></div>
             </Tilt>
-          </div>
+          </div> */}
         </Fade>
       </div>
     </div>

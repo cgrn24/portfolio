@@ -18,7 +18,7 @@
 
   .container {
     @include container();
-    @include flex(row, space-between, center, wrap);
+    @include flex(column, center, center, nowrap);
     @media screen and (max-width: 1016px) {
       @include flex(column, center, center, nowrap);
     }
