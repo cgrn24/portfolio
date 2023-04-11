@@ -54,9 +54,10 @@
     }
     .description {
       @include text($textFontFamily, 12px, 1.8);
+      color: $secondTextColor;
       font-weight: 400;
       // border: 1px solid;
-      padding: 5%;
+      padding: 1%;
       // background-color: rgb(184, 184, 184);
       text-align: justify;
     }

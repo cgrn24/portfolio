@@ -33,22 +33,23 @@ export const Projects = () => {
             <Project
               style={cardsStyle}
               title='The Cards app'
-              description='Stack: TypeScript, React, Redux-toolkit, React tables, Framer Motion, Material UI. Cards is an app that uses spaced repetition technique for you to quickly memorize things.'
+              descriptionStack='Stack: TypeScript, React, Redux Toolkit, React tables, Framer Motion, Material UI'
+              description='Cards is an app that uses spaced repetition technique for you to quickly memorize things'
               link='https://cards-lovat-eight.vercel.app/'
-            />
-            <Project
-              style={socnetStyle}
-              title='Social network'
-              description='Stack: TypeScript, React, Redux, Class
-              components, Redux-form.
-              Social Network is an app to communicate people.'
-              link='https://cgrn24.github.io/social-network/'
             />
             <Project
               style={todoStyle}
               title='Todo list'
-              description='Stack: TypeScript, React, RTK, Formik, Unit tests, Material UI. Task manager is an app to proper manage your tasks'
+              descriptionStack='Stack: TypeScript, React, Redux Toolkit, Formik, Unit tests, Material UI'
+              description='Task manager is an app to proper manage your tasks'
               link='/'
+            />
+            <Project
+              style={socnetStyle}
+              title='Social network'
+              descriptionStack='Stack: TypeScript, React, Redux, Class components, Redux-form'
+              description='Social Network is an app to communicate people'
+              link='https://cgrn24.github.io/social-network/'
             />
           </div>
         </div>

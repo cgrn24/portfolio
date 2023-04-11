@@ -29,7 +29,7 @@
     .copyrights {
       @include text($textFontFamily, 14px, 1.8);
       font-weight: 400;
-      color: rgba(255, 255, 255, 0.5);
+      color: $secondTextColor;
     }
   }
 }

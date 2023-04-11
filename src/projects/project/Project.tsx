@@ -5,6 +5,7 @@ import style from './Project.module.scss'
 type ProjectPropsType = {
   title: string
   description: string
+  descriptionStack: string
   style: ProjectStyleType
   link: string
 }
@@ -17,7 +18,8 @@ export const Project = (props: ProjectPropsType) => {
       </div>
       <div className={style.projectInfo}>
         <h3 className={style.projectTitle}>{props.title}</h3>
-        <span className={style.description}>{props.description}</span>
+        <div className={style.description}>{props.descriptionStack}</div>
+        <div className={style.description}>{props.description}</div>
       </div>
     </div>
   )
