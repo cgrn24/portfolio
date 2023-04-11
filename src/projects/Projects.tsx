@@ -3,7 +3,7 @@ import styleContainer from '../common/styles/Container.module.css'
 import { Project } from './project/Project'
 import { Title } from '../common/components/title/Title'
 import todoImage from './../assets/image/todolist.jpg'
-import socialImage from './../assets/image/socnet.jpg'
+import socialImage from './../assets/image/socnet.png'
 import cardsImage from './../assets/image/cards.png'
 import { Fade } from 'react-awesome-reveal'
 
@@ -33,16 +33,23 @@ export const Projects = () => {
             <Project
               style={cardsStyle}
               title='The Cards app'
-              description='Cards is an app that uses spaced repetition technique for you to quickly memorize things.'
+              description='Stack: TypeScript, React, Redux-toolkit, React tables, Framer Motion, Material UI. Cards is an app that uses spaced repetition technique for you to quickly memorize things.'
               link='https://cards-lovat-eight.vercel.app/'
             />
             <Project
               style={socnetStyle}
               title='Social network'
-              description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.'
+              description='Stack: TypeScript, React, Redux, Class
+              components, Redux-form.
+              Social Network is an app to communicate people.'
+              link='https://cgrn24.github.io/social-network/'
+            />
+            <Project
+              style={todoStyle}
+              title='Todo list'
+              description='Stack: TypeScript, React, RTK, Formik, Unit tests, Material UI. Task manager is an app to proper manage your tasks'
               link='/'
             />
-            <Project style={todoStyle} title='Todo list' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, aliquam.' link='/' />
           </div>
         </div>
       </Fade>

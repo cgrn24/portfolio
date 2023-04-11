@@ -14,12 +14,20 @@ export const Footer = () => {
         <Fade direction='up' triggerOnce>
           <h3 className={style.text}>Petr Prudnikov</h3>
           <div className={style.iconWrapper}>
-            <FontAwesomeIcon icon={faEnvelope} size='2x' className={style.icon} />
-            <FontAwesomeIcon icon={faGithub} size='2x' className={style.icon} />
-            <FontAwesomeIcon icon={faLinkedin} size='2x' className={style.icon} />
-            <FontAwesomeIcon icon={faTelegram} size='2x' className={style.icon} />
+            <a href={'mailto:aln724@proton.me'} target='_blanc'>
+              <FontAwesomeIcon icon={faEnvelope} size='2x' className={style.icon} />
+            </a>
+            <a href='https://github.com/cgrn24' target='_blanc'>
+              <FontAwesomeIcon icon={faGithub} size='2x' className={style.icon} />
+            </a>
+            <a href='https://www.linkedin.com/in/petr-prudnikov-661595268' target='_blanc'>
+              <FontAwesomeIcon icon={faLinkedin} size='2x' className={style.icon} />
+            </a>
+            <a href='https://t.me/aln724' target='_blanc'>
+              <FontAwesomeIcon icon={faTelegram} size='2x' className={style.icon} />
+            </a>
           </div>
-          <div className={style.copyrights}>©2022 All rights reserved</div>
+          <div className={style.copyrights}>©2023 All rights reserved</div>
         </Fade>
       </div>
     </div>
