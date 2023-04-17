@@ -2,7 +2,7 @@ import style from './Projects.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import { Project } from './project/Project'
 import { Title } from '../common/components/title/Title'
-import todoImage from './../assets/image/todolist.jpg'
+import todoImage from './../assets/image/todo.png'
 import socialImage from './../assets/image/socnet.png'
 import cardsImage from './../assets/image/cards.png'
 import { Fade } from 'react-awesome-reveal'
@@ -39,10 +39,10 @@ export const Projects = () => {
             />
             <Project
               style={todoStyle}
-              title='Todo list'
-              descriptionStack='Stack: TypeScript, React, Redux Toolkit, Formik, Unit tests, Material UI'
+              title='Task Manager'
+              descriptionStack='Stack: TypeScript, React, Redux Toolkit, Formik, Unit tests, Material UI, React-beautiful-dnd'
               description='Task manager is an app to proper manage your tasks'
-              link='/'
+              link='https://cgrn24.github.io/todo_list/'
             />
             <Project
               style={socnetStyle}
