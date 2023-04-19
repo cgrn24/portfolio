@@ -1,9 +1,8 @@
 import { useRef } from 'react'
 import { Fade } from 'react-awesome-reveal'
 import emailjs from '@emailjs/browser'
-import { Button } from '../common/components/button/Button'
 import { Title } from '../common/components/title/Title'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import style from './Contacts.module.scss'
 
 export const Contacts = () => {

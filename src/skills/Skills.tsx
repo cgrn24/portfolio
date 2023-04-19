@@ -1,5 +1,5 @@
 import style from './Skills.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import { Skill } from './skill/Skill'
 import { Title } from '../common/components/title/Title'
 import reactIcon from '../assets/image/react.svg'
@@ -19,51 +19,15 @@ export const Skills = () => {
         <div className={`${styleContainer.container} ${style.skillsContainer}`}>
           <Title title={'My skills'} />
           <div className={style.skills}>
-            <Skill
-              icon={reactIcon}
-              title='React'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={tsIcon}
-              title='TypeScript'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={reduxIcon}
-              title='Redux / Redux Toolkit'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={htmlIcon}
-              title='HTML5'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={cssIcon}
-              title='CSS3'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={muiIcon}
-              title='Material UI'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={rhfIcon}
-              title='React Hook Form'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={axiosIcon}
-              title='AXIOS'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
-            <Skill
-              icon={sassIcon}
-              title='SCSS/SASS'
-              description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum corrupti quas, similique ullam cupiditate illo nihil reiciendis perspiciatis ipsum veniam.'
-            />
+            <Skill icon={reactIcon} title='React' />
+            <Skill icon={tsIcon} title='TypeScript' />
+            <Skill icon={reduxIcon} title='Redux / Redux Toolkit' />
+            <Skill icon={htmlIcon} title='HTML5' />
+            <Skill icon={cssIcon} title='CSS3' />
+            <Skill icon={muiIcon} title='Material UI' />
+            <Skill icon={rhfIcon} title='React Hook Form' />
+            <Skill icon={axiosIcon} title='AXIOS' />
+            <Skill icon={sassIcon} title='SCSS/SASS' />
           </div>
         </div>
       </Fade>

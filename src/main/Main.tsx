@@ -5,15 +5,9 @@ import { useCallback } from 'react'
 import { Container, Engine } from 'tsparticles-engine'
 import { Fade } from 'react-awesome-reveal'
 import ReactTypingEffect from 'react-typing-effect'
-import Tilt from 'react-parallax-tilt'
 
 export const Main = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine)
-
-    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine)
   }, [])
 
@@ -102,11 +96,6 @@ export const Main = () => {
             </span>
             <ReactTypingEffect text={'Frontend Developer'} />
           </div>
-          {/* <div className={style.photo}>
-            <Tilt>
-              <div className={style.image}></div>
-            </Tilt>
-          </div> */}
         </Fade>
       </div>
     </div>
